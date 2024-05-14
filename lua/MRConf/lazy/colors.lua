@@ -45,6 +45,23 @@ return {
             ColorMyPencils()
         end
     },
+    {
+        "mcchrish/zenbones.nvim",
+        name = "zenbones",
+
+        dependencies = { "rktjmp/lush.nvim" },
+    },
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        config = function()
+            require('catppuccin').setup({
+                styles = {
+                    conditionals = {},
+                },
+            })
+        end
+    },
 }
 --[[
     "folke/tokyonight.nvim",
