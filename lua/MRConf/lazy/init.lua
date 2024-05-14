@@ -15,5 +15,4 @@ return {
 	'mbbill/undotree',
     'folke/zen-mode.nvim',
     'eandrju/cellular-automaton.nvim',
-    'laytan/cloak.nvim',
 }
