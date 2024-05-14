@@ -11,7 +11,6 @@ return {
             }
         end
     },
-	'tpope/vim-fugitive',
 	'mbbill/undotree',
     'folke/zen-mode.nvim',
     'eandrju/cellular-automaton.nvim',
