@@ -28,7 +28,8 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "rust_analyzer",
-                "pyright",
+                "ruff_lsp",
+                "pylsp",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
