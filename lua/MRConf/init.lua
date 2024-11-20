@@ -56,3 +56,26 @@ autocmd('LspAttach', {
 vim.g.netrw_browse_split = 0
 vim.g.netwr_banner = 0
 vim.g.netwr_winsize = 25
+
+vim.cmd(':Copilot disable')
+
+-- Wrap for .tex file
+local function set_tex_line_wrap(max_length)
+    -- Autocommand for .tex files
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "tex",
+        callback = function()
+            -- Set the text width for line wrapping
+            vim.opt_local.textwidth = max_length
+            -- Enable line wrapping
+            vim.opt_local.wrap = true
+            -- Ensure line breaks occur at word boundaries
+            vim.opt_local.linebreak = true
+            -- Optional: Use a preferred set of break characters (adjust as needed)
+            vim.opt_local.breakat = " ^I!@*-+;:,./?"
+        end,
+    })
+end
+
+-- Call the function with your desired max character length
+set_tex_line_wrap(88)
