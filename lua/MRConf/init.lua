@@ -57,8 +57,6 @@ vim.g.netrw_browse_split = 0
 vim.g.netwr_banner = 0
 vim.g.netwr_winsize = 25
 
-vim.cmd(':Copilot disable')
-
 -- Wrap for .tex file
 local function set_tex_line_wrap(max_length)
     -- Autocommand for .tex files
