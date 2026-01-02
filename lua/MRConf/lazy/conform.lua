@@ -11,8 +11,8 @@ return {
         zig = { "zigfmt" }, -- add zig
       },
       format_on_save = {
-        timeout_ms = 2000,
-        lsp_fallback = false, -- don't use zls formatting
+        timeout_ms = 1000,
+        lsp_format = "fallback", -- don't use zls formatting
       },
     })
 
@@ -25,7 +25,7 @@ return {
 
     -- Optional: manual command
     vim.api.nvim_create_user_command("ZigFmt", function()
-      conform.format({ async = false, lsp_fallback = false })
+      conform.format({ async = false, lsp_format = false })
     end, {})
   end,
 }
