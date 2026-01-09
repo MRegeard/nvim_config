@@ -1,6 +1,7 @@
 -- lua/codanote.lua
 -- NOTE(@MRegeard): This has been vibe coded because I don't know anything about lua.
 -- Seems to be working though !
+-- TODO(@MRegeard): Make this its own nvim plugin ?
 local M = {}
 
 local ns = vim.api.nvim_create_namespace("Codanote")
