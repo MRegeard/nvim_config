@@ -3,6 +3,8 @@ require("MRConf.set")
 require("MRConf.language")
 require("MRConf.lazy_init")
 
+require("MRConf.codanote").setup({ filetypes = { "*" }, comment_lines_only = false })
+
 local augroup = vim.api.nvim_create_augroup
 local MRGroup = augroup('MR', {})
 
@@ -30,7 +32,7 @@ autocmd('TextYankPost', {
     end,
 })
 
-autocmd({"BufWritePre"}, {
+autocmd({ "BufWritePre" }, {
     group = MRGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],
