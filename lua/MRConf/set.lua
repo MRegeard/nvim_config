@@ -28,7 +28,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "88"
+-- vim.opt.colorcolumn = "88"
 
 -- To disable mouse interaction other than scrolling. Good to learn vim mouvement I guess.
---vim.opt.mouse = ""
+vim.opt.mouse = ""
