@@ -21,6 +21,13 @@ vim.filetype.add({
     }
 })
 
+autocmd("FileType", {
+    callback = function(ev)
+        local ft = vim.bo[ev.buf].filetype
+        vim.opt_local.colorcolumn = (ft == "python") and "88" or "100"
+    end,
+})
+
 autocmd('TextYankPost', {
     group = yank_group,
     pattern = '*',
@@ -79,3 +86,5 @@ end
 
 -- Call the function with your desired max character length
 set_tex_line_wrap(88)
+
+ColorDark()
