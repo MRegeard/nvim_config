@@ -88,3 +88,10 @@ end
 set_tex_line_wrap(88)
 
 ColorDark()
+
+-- Set Garmin MonkeyC .mc filetype to Java
+vim.filetype.add({
+    extension = {
+        mc = "java",
+    },
+})
