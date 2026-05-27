@@ -7,6 +7,7 @@ return {
                 ensure_installed = {
                     "lua",
                     "c",
+                    "cpp",
                     "rust",
                     "bash",
                     "python",
@@ -17,6 +18,7 @@ return {
                     "vim",
                     "markdown",
                     "markdown_inline",
+                    "latex",
                 },
                 highlight = true,
                 auto_install = true,
