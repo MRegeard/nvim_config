@@ -13,7 +13,7 @@ return {
 
         local preview_utils = require("telescope.previewers.utils")
         preview_utils.ts_highlighter = function(bufnr, ft)
-            local lang = vim.treesiter.language.get_lang(ft) or ft
+            local lang = vim.treesitter.language.get_lang(ft) or ft
             if not lang or lang == "" then
                 return false
             end
