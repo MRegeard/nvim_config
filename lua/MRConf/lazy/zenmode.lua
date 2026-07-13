@@ -5,14 +5,14 @@ return {
             require("zen-mode").setup {
                 window = {
                     width = 90,
-                    options = { }
+                    options = {}
                 },
             }
             require("zen-mode").toggle()
             vim.wo.wrap = false
             vim.wo.number = true
             vim.wo.rnu = true
-            ColorMyPencils()
+            ColorDark()
         end)
 
 
@@ -20,7 +20,7 @@ return {
             require("zen-mode").setup {
                 window = {
                     width = 80,
-                    options = { }
+                    options = {}
                 },
             }
             require("zen-mode").toggle()
@@ -28,7 +28,7 @@ return {
             vim.wo.number = false
             vim.wo.rnu = false
             vim.opt.colorcolumn = "0"
-            ColorMyPencils()
+            ColorDark()
         end)
     end
 }
