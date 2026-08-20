@@ -1,1 +1,1 @@
-vim.api.nvim_exec('language en_US', true)
+vim.cmd('language messages en_US.UTF-8', true)
